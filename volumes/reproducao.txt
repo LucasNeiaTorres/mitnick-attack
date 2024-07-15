@@ -1,0 +1,7 @@
+- execute todos os contâiners 
+- dê "echo 10.9.0.6 > ~/.rhosts" no x-terminal
+- rode com "python3 arpSpoofing.py" no seed-attacker (dentro de volumes)
+- enquanto roda o arpSpoofing.py, em outro terminal, rode com "python3 mitnick.py" no seed-attacker (dentro de volumes)
+- espere alguns segundos e agora você pode acessar o x-terminal diretamente do seed-attacker com o rsh
+
+*Observação: é necessário rodar o arpSpoofing.py enquanto roda o mitnick.py pois, após certo tempo, a máquina do x-terminal conserta automaticamente sua tabela ARP com o valor correto do MAC do trusted-server.  
